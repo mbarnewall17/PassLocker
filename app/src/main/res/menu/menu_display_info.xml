@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.barnewall.matthew.passlocker.DisplayInfoActivity">
+    <item android:id="@+id/delete_record"
+        android:title="Delete"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/edit_record"
+        android:title="Edit"
+        app:showAsAction="never" />
+</menu>

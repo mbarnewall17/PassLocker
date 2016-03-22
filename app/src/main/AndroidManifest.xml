@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.barnewall.matthew.passlocker" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_locker"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".InitialSetup"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dropbox.sync.android.DbxAuthActivity" />
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <data android:scheme="db-oh8dsmwj9jp2es1" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.dropbox.sync.android.DbxSyncService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="Dropbox Sync" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CreateLowPasswordActivity"
+            android:label="@string/title_activity_create_low_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CreateHighPasswordActivity"
+            android:label="@string/title_activity_create_high_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="Pass Locker"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CreateNewActivity"
+            android:label="Create New Entry"
+            android:parentActivityName=".MainMenuActivity" >
+        </activity>
+        <activity
+            android:name=".DisplayInfoActivity"
+            android:label="@string/title_activity_display_info"
+            android:parentActivityName=".MainMenuActivity" >
+        </activity>
+        <activity
+            android:name=".QuestionLoginActivity"
+            android:label="@string/title_activity_question_login" >
+        </activity>
+    </application>
+
+</manifest>

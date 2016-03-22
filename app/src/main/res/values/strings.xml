@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PassLocker</string>
+    <string name="APP_SECRET">b33vntcwrv9v1h1</string>
+    <string name="APP_KEY">oh8dsmwj9jp2es1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_create_password">CreatePasswordActivity</string>
+    <string name="title_activity_create_low_password">CreateLowPasswordActivity</string>
+    <string name="title_activity_create_high_password">CreateHighPasswordActivity</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_activity_create_new">CreateNewActivity</string>
+    <string name="title_activity_display_info">DisplayInfoActivity</string>
+    <string name="title_activity_question_login">QuestionLoginActivity</string>
+
+</resources>
